@@ -1,44 +1,44 @@
-// //დავალება N4 (JS)
+//დავალება N4 (JS)
 
-// //
-// let age = 15;
+//
+let age = 15;
 
-// if (age < 18){
-//     console.log("თქვენ არ შეგიძლიათ მართვის მოწმობის აღება");
-// }
+if (age < 18){
+    console.log("თქვენ არ შეგიძლიათ მართვის მოწმობის აღება");
+}
 
-//      else  if  (age>18) {
-//         console.log("თქვენ შეგიძლიათ მართვის მოწმობის აღება"); }
+     else  if  (age>18) {
+        console.log("თქვენ შეგიძლიათ მართვის მოწმობის აღება"); }
 
-//         else {
-//             console.log("მითითებული ასაკი არასწორია!") }
+        else {
+            console.log("მითითებული ასაკი არასწორია!") }
         
 
 
-// //დავალება N5 (JS)
+//დავალება N5 (JS)
           
      
-// let temperature = Number(prompt('ჩაწერე ტემპერატურა'))
-// switch(true){
-//     case temperature <0:
-//         console.log("ყინავს!");
-//         break;
-//         case temperature >=0 && temperature<=10:
-//             console.log('ძალიან ცივა')
-//             break;
-//             case temperature >=11 && temperature <=20:
-//                 console.log('ცივა');
-//                 break;
-//                 case temperature >=21 && temperature<=30:
-//                     console.log('თბილა')
-//                     break;
-//                     case temperature >30:
-//                         console.log('ცხელა')
-//                     break;
-//                     default:
-//                         console.log('მონაცემები არ მოიძებნა')
+let temperature = Number(prompt('ჩაწერე ტემპერატურა'))
+switch(true){
+    case temperature <0:
+        console.log("ყინავს!");
+        break;
+        case temperature >=0 && temperature<=10:
+            console.log('ძალიან ცივა')
+            break;
+            case temperature >=11 && temperature <=20:
+                console.log('ცივა');
+                break;
+                case temperature >=21 && temperature<=30:
+                    console.log('თბილა')
+                    break;
+                    case temperature >30:
+                        console.log('ცხელა')
+                    break;
+                    default:
+                        console.log('მონაცემები არ მოიძებნა')
             
-//             }
+            }
 
 
 
@@ -47,24 +47,24 @@
 
 
 
-//             // დავალება 6
+            // დავალება 6
             
-// const array = [10, 20, 30, 40, 50];
-// const valueToFind = 31;
+const array = [10, 20, 30, 40, 50];
+const valueToFind = 31;
 
-// if (array.includes(valueToFind)){
-// console.log('რიცხვი ნაპოვნია')
-// }
-// else{
-//  console.log('"რიცხვი არ მოიძებნა"')   
+if (array.includes(valueToFind)){
+console.log('რიცხვი ნაპოვნია')
+}
+else{
+ console.log('"რიცხვი არ მოიძებნა"')   
 
-// }
+}
 
 
-// //დავალება N7 (JS) 
-// let qustion=prompt('"ჩაწერე შენი სახელი')
+//დავალება N7 (JS) 
+let qustion=prompt('"ჩაწერე შენი სახელი')
 
-// console.log(`"გამარჯობა, "${qustion}" , რით შემიძლია დაგეხმაროთ?"`) 
+console.log(`"გამარჯობა, "${qustion}" , რით შემიძლია დაგეხმაროთ?"`) 
 
 
 
