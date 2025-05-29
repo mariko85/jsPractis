@@ -95,11 +95,45 @@
 
 
 //	დავალება N10 (JS)
-let inputString = prompt(`დაწერე სიტყვა`)
-if (inputString[0] === 'A' || inputString[0]=='E' || inputString[0]=='I'  || inputString[0]=='O' || inputString[0] =='U' ){
-    console.log("სიტყვა იწყება ხმოვანით, რომელიც არის "+inputString[0])
+// let inputString = prompt(`დაწერე სიტყვა`)
+// if (inputString[0] === 'A' || inputString[0]=='E' || inputString[0]=='I'  || inputString[0]=='O' || inputString[0] =='U' ){
+//     console.log("სიტყვა იწყება ხმოვანით, რომელიც არის "+inputString[0])
+// }
+// else{
+//      console.log("სიტყვა არ იწყება ხმოვანით, რომელიც არის "+inputString[0])
+
+// }
+
+
+	
+// დავალება N11 (JS)
+// # ჩელენჯის ინსტრუქცია
+// 
+
+let player1 = prompt ("Player 1, enter rock, paper, or scissors:").toLowerCase()
+let player2 =prompt("Player 2, enter rock, paper, or scissors:")
+
+function rockPaperScissors (player1,player2){
+
+
+if (player1 == 'rock' && player2 == 'scissors' ){
+
+
+   console.log('player1 is  winnder') 
 }
+else if (player1 == 'scissors' && player2 == 'paper' ){
+console.log('player1 is  winnder') 
+}
+
+else if (player1 == 'paper' && player2 == 'rock' ){
+console.log('player1 is  winnder') 
+}
+
 else{
-     console.log("სიტყვა არ იწყება ხმოვანით, რომელიც არის "+inputString[0])
+    console.log('player2 is  winnder') 
+}
+
 
 }
+
+rockPaperScissors(player1,player2)
