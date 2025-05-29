@@ -82,12 +82,24 @@
 
 // თუ ჩაწერილი რიცხვი ლუწია გამოვიდეს შეტყობინება ეკრანზე : "რიცხვი ლუწია"
 
-let inputNumberi = prompt(`ჩაწერე რიცხვი`)
-if(inputNumberi %2 ===0 ){
-    alert(`რიცხვი ლუწია`)
+// let inputNumberi = prompt(`ჩაწერე რიცხვი`)
+// if(inputNumberi %2 ===0 ){
+//     alert(`რიცხვი ლუწია`)
 
+// }
+// else{
+//     alert(`რიცხვი კენტია`)
+
+// }
+
+
+
+//	დავალება N10 (JS)
+let inputString = prompt(`დაწერე სიტყვა`)
+if (inputString[0] === 'A' || inputString[0]=='E' || inputString[0]=='I'  || inputString[0]=='O' || inputString[0] =='U' ){
+    console.log("სიტყვა იწყება ხმოვანით, რომელიც არის "+inputString[0])
 }
 else{
-    alert(`რიცხვი კენტია`)
+     console.log("სიტყვა არ იწყება ხმოვანით, რომელიც არის ")
 
 }
