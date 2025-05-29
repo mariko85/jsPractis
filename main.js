@@ -100,6 +100,6 @@ if (inputString[0] === 'A' || inputString[0]=='E' || inputString[0]=='I'  || inp
     console.log("სიტყვა იწყება ხმოვანით, რომელიც არის "+inputString[0])
 }
 else{
-     console.log("სიტყვა არ იწყება ხმოვანით, რომელიც არის ")
+     console.log("სიტყვა არ იწყება ხმოვანით, რომელიც არის "+inputString[0])
 
 }
