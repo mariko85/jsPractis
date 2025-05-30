@@ -108,32 +108,87 @@
 	
 // დავალება N11 (JS)
 // # ჩელენჯის ინსტრუქცია
-// 
+// // 
 
-let player1 = prompt ("Player 1, enter rock, paper, or scissors:").toLowerCase()
-let player2 =prompt("Player 2, enter rock, paper, or scissors:")
+// let player1 = prompt ("Player 1, enter rock, paper, or scissors:").toLowerCase()
+// let player2 =prompt("Player 2, enter rock, paper, or scissors:")
 
-function rockPaperScissors (player1,player2){
-
-
-if (player1 == 'rock' && player2 == 'scissors' ){
+// function rockPaperScissors (player1,player2){
 
 
-   console.log('player1 is  winnder') 
+// if (player1 == 'rock' && player2 == 'scissors' ){
+
+
+//    console.log('player1 is  winnder') 
+// }
+// else if (player1 == 'scissors' && player2 == 'paper' ){
+// console.log('player1 is  winnder') 
+// }
+
+// else if (player1 == 'paper' && player2 == 'rock' ){
+// console.log('player1 is  winnder') 
+// }
+
+// else{
+//     console.log('player2 is  winnder') 
+// }
+
+
+// }
+
+// rockPaperScissors(player1,player2)
+
+
+//დავალება N12 (JS)
+
+let age = Number(prompt('Enter your age'))
+let type =prompt('Enter movie type (regular or 3D):')
+let time =prompt('Enter time of day (matinee or evening):')
+let tiket=0;
+switch (true)  {
+    case age <10:
+        console.log(tiket=5)
+        break;
+        case age >10 && age <65:
+         console.log(tiket=15)
+        break;    
+         case age >65 :
+         console.log(tiket=10)
+        break;   
+       
+        case type == '3D':
+            console.log(tiket=tiket+5)
+            break;
+            case time=='evening':
+                console.log(tiket=tiket+5)
+                break
+                 default:
+   console.log('მონაცემები არ მოიძებნა') 
 }
-else if (player1 == 'scissors' && player2 == 'paper' ){
-console.log('player1 is  winnder') 
+
+
+
+switch(true){
+       case type == '3D':
+            console.log(tiket=tiket+5)
+            break;
+            
+                 default:
+   console.log('მონაცემები არ მოიძებნა') 
 }
 
-else if (player1 == 'paper' && player2 == 'rock' ){
-console.log('player1 is  winnder') 
+
+switch(true){
+       
+            case time=='evening':
+                console.log( 'ბილეთის ფასი თქვენთვის არის'+ (tiket=tiket+5))
+                break;
+                 default:
+   console.log('მონაცემები არ მოიძებნა') 
+}
+let sale=true;
+if(sale ==true){
+    console.log('ფასდაკლება   ' +5)
+     console.log('სულ ფასი   ' +(tiket=tiket-5))
 }
 
-else{
-    console.log('player2 is  winnder') 
-}
-
-
-}
-
-rockPaperScissors(player1,player2)
