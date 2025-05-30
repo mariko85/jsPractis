@@ -139,50 +139,50 @@
 // rockPaperScissors(player1,player2)
 
 
-// დავალება N12 (JS)
+// // დავალება N12 (JS)
 
-let age = Number(prompt('Enter your age'))
-let type =prompt('Enter movie type (regular or 3D):')
-let time =prompt('Enter time of day (matinee or evening):')
-let tiket=0;
-switch (true)  {
-    case age <10:
-        tiket=5 ;
-        break;
+// let age = Number(prompt('Enter your age'))
+// let type =prompt('Enter movie type (regular or 3D):')
+// let time =prompt('Enter time of day (matinee or evening):')
+// let tiket=0;
+// switch (true)  {
+//     case age <10:
+//         tiket=5 ;
+//         break;
 
-         case age >10 && age<65 :
-        tiket= 15 ;
+//          case age >10 && age<65 :
+//         tiket= 15 ;
         
 
-         case age >65:
-        tiket=10 ;
+//          case age >65:
+//         tiket=10 ;
         
 
-        default:
-        console.log('ბილეთის საწყისი ')
-}
+//         default:
+//         console.log('ბილეთის საწყისი ')
+// }
 
-if(type ==='3D' && time ==='evening'){
-            tiket=tiket+10
-        }
-         else if(time == 'evening' || type =='3D' ){
-            tiket=tiket+5
-         }
-         else{
-            tiket=tiket
-         }
-         console.log(`ბილეთის საწყისი ფასი ${ tiket}`)
+// if(type ==='3D' && time ==='evening'){
+//             tiket=tiket+10
+//         }
+//          else if(time == 'evening' || type =='3D' ){
+//             tiket=tiket+5
+//          }
+//          else{
+//             tiket=tiket
+//          }
+//          console.log(`ბილეთის საწყისი ფასი ${ tiket}`)
 
-let sale=true;
-if(sale ==true){
-    console.log('ფასდაკლება   ' + tiket*25/100)
-     console.log('სულ ფასი   ' +(tiket=tiket-5))
-}
-
-
+// let sale=true;
+// if(sale ==true){
+//     console.log('ფასდაკლება   ' + tiket*25/100)
+//      console.log('სულ ფასი   ' +(tiket=tiket-5))
+// }
 
 
 
+
+// დავალება 13
 
 
 
