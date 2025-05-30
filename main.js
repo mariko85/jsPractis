@@ -139,7 +139,7 @@
 // rockPaperScissors(player1,player2)
 
 
-//დავალება N12 (JS)
+// დავალება N12 (JS)
 
 let age = Number(prompt('Enter your age'))
 let type =prompt('Enter movie type (regular or 3D):')
@@ -147,48 +147,89 @@ let time =prompt('Enter time of day (matinee or evening):')
 let tiket=0;
 switch (true)  {
     case age <10:
-        console.log(tiket=5)
+        tiket=5 ;
         break;
-        case age >10 && age <65:
-         console.log(tiket=15)
-        break;    
-         case age >65 :
-         console.log(tiket=10)
-        break;   
-       
-        case type == '3D':
-            console.log(tiket=tiket+5)
-            break;
-            case time=='evening':
-                console.log(tiket=tiket+5)
-                break
-                 default:
-   console.log('მონაცემები არ მოიძებნა') 
+
+         case age >10 && age<65 :
+        tiket= 15 ;
+        
+
+         case age >65:
+        tiket=10 ;
+        
+
+        default:
+        console.log('ბილეთის საწყისი ')
 }
 
+if(type ==='3D' && time ==='evening'){
+            tiket=tiket+10
+        }
+         else if(time == 'evening' || type =='3D' ){
+            tiket=tiket+5
+         }
+         else{
+            tiket=tiket
+         }
+         console.log(`ბილეთის საწყისი ფასი ${ tiket}`)
 
-
-switch(true){
-       case type == '3D':
-            console.log(tiket=tiket+5)
-            break;
-            
-                 default:
-   console.log('მონაცემები არ მოიძებნა') 
-}
-
-
-switch(true){
-       
-            case time=='evening':
-                console.log( 'ბილეთის ფასი თქვენთვის არის'+ (tiket=tiket+5))
-                break;
-                 default:
-   console.log('მონაცემები არ მოიძებნა') 
-}
 let sale=true;
 if(sale ==true){
-    console.log('ფასდაკლება   ' +5)
+    console.log('ფასდაკლება   ' + tiket*25/100)
      console.log('სულ ფასი   ' +(tiket=tiket-5))
 }
 
+
+
+
+
+
+
+
+// let choise =prompt('Welcome to the Quiz Game! Choose a topic:\n1. strings\n2. variable\n3. math')
+
+//  let question =0;
+//  let answer =0;
+
+
+//  switch(true){
+//     case (choise== 1):
+//         question = "რა არის რა არის typeof(5)?"
+//         answer= prompt(question)
+//          if (answer.toLowerCase() === "number"){
+            
+//         alert('პასუხი სწორია')}
+//         else {
+//          alert("სამწუხაროდ ვერ გამოიცანით");
+//         }
+//         break;
+//         case (choise ==2):
+            
+//             question =  "შეიძლება თუ არა let-ის რედეკლალირება"
+//             answer =prompt(question)
+//             if (answer.toLowerCase() === "yes"){
+//                 alert('sworia')
+//             }
+//             else{
+//                 alert('arasowria')
+//             }
+//             break;
+
+//                case (choise ==3) :
+            
+//             question =  "რას აბრუნებს console.log(Math.floor(2.1)) "
+//             answer =prompt(question)
+//             if (answer.toLowerCase() === "ori"){
+//                 alert('sworia')
+//             }
+//             else{
+//                 alert('arasowria')
+//             }
+//             break;
+           
+
+
+//  }
+
+
+    
