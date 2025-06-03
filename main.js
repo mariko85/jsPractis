@@ -232,4 +232,34 @@
 //  }
 
 
+    //დავალება 14
+function getFeedback(num ,string){
+
+    if( num<51){
+
+      
+       return `სამწუხაროდ ${string} თქვენ ვერ გადალახეთ მინიმალური ბარიერი, თქვენ დაგაკლდათ ${51-num} ქულა, უკეთესად მოემზადეთ`
+    }
+     else if (num>51 && num<90){
+
+      
+       return `გილოცავთ ${string}  თქვენ  ${num-51} ქულით მეტი აიღეთ ბარიერზე, `
+
+    }  
     
+    else  if ( num>90){
+      
+       return ` ${string} ძალიან კარგი შედეგია `
+
+    } 
+    else{
+        return "მონაცემები არ მოიძებნა"
+    }
+     
+   
+
+}
+
+getFeedback(60,'mari')
+
+ console.log(getFeedback(60,'mari'))
