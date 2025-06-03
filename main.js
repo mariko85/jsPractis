@@ -232,34 +232,56 @@
 //  }
 
 
-    //დავალება 14
-function getFeedback(num ,string){
+//     //დავალება 14
+// function getFeedback(num ,string){
 
-    if( num<51){
-
-      
-       return `სამწუხაროდ ${string} თქვენ ვერ გადალახეთ მინიმალური ბარიერი, თქვენ დაგაკლდათ ${51-num} ქულა, უკეთესად მოემზადეთ`
-    }
-     else if (num>51 && num<90){
+//     if( num<51){
 
       
-       return `გილოცავთ ${string}  თქვენ  ${num-51} ქულით მეტი აიღეთ ბარიერზე, `
+//        return `სამწუხაროდ ${string} თქვენ ვერ გადალახეთ მინიმალური ბარიერი, თქვენ დაგაკლდათ ${51-num} ქულა, უკეთესად მოემზადეთ`
+//     }
+//      else if (num>51 && num<90){
 
-    }  
+      
+//        return `გილოცავთ ${string}  თქვენ  ${num-51} ქულით მეტი აიღეთ ბარიერზე, `
+
+//     }  
     
-    else  if ( num>90){
+//     else  if ( num>90){
       
-       return ` ${string} ძალიან კარგი შედეგია `
+//        return ` ${string} ძალიან კარგი შედეგია `
 
-    } 
-    else{
-        return "მონაცემები არ მოიძებნა"
-    }
+//     } 
+//     else{
+//         return "მონაცემები არ მოიძებნა"
+//     }
      
    
 
-}
+// }
 
-getFeedback(60,'mari')
+// getFeedback(60,'mari')
 
- console.log(getFeedback(60,'mari'))
+//  console.log(getFeedback(60,'mari'))
+
+
+// davaleba 15
+ //შექმენით ფუნქცია რომელიც 2 prompt-ით შეგეკითხებათ სახელს და პაროლს, თუ სახელი იქნება "admin" და პაროლი "1234", 
+ // //დაწეროს ტექსტი Hello Admin, წინააღმდეგ შემთხვევაში Hello guest.
+
+
+ function greetAdmin(num, string ){
+    let adminName=prompt (` რა გქვია?`)
+    let password = prompt(`დაწერე პაროლი`)
+    
+    if( adminName == 'Admin' && password==1234){
+        return 'Hello Admin'
+    }
+    else{
+        return 'Hello guest'
+    }
+
+ }
+
+ greetAdmin( 1234,'Admin')
+ console.log (greetAdmin( 1234,'Admin'))
