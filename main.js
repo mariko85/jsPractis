@@ -292,39 +292,43 @@
 // მიხედვით გადაიყვანოს 22:00-ად ან უბრალოდ დატოვებს 10:00-ად(დამოკიდებული იქნება PM-ზე და AM-ზე
 
 
-function times (){
-    let time =Number(prompt(`დაწერე მიმდინარე საათი`))
-let timeAmPm =prompt(`დაწერე PM ან AM`)
-    if(timeAmPm == 'PM'){
+// function times (){
+//     let time =Number(prompt(`დაწერე მიმდინარე საათი`))
+// let timeAmPm =prompt(`დაწერე PM ან AM`)
+//     if(timeAmPm == 'PM'){
 
-        return time = time+ 12
-        console.log(time)
-    }
-else {
-    return time
-    console.log(time)
-}
+//         return time = time+ 12
+        
+//     }
+// else {
+//     return time
+//     console.log(time)
+// }
 
-}
+// }
 
-times(10)
+// times()
 
 
 
-davaleba 17
-ფუნქცია რომელსაც გადავცემთ ორ სიტყვას და უნდა შეადაროს ასოების რაოდენობა.
-თუ დაემთხვევა პირველი სიტყვის ასოები მეორეს დააბრუნოს true თუ არა false .
+// davaleba 17
+//ფუნქცია რომელსაც გადავცემთ ორ სიტყვას და უნდა შეადაროს ასოების რაოდენობა.
+//თუ დაემთხვევა პირველი სიტყვის ასოები მეორეს დააბრუნოს true თუ არა false .
 
-function chaleng(string1, string2){
-    con
+let string1 = prompt(`ჩაწერე პირველი სიტყვა `)
+ let string2 = prompt(`ჩაწერე მეორე სიტყვა `)
+function chaleng(){
+ 
+    let array1 = string1.split('')
+    let array2 =string2.split('')
     
-    if (string1.langth === string2.langth){
-        return tr
-    }
+if (array1[0]=== array2[0]){
+        return true
+        }
     else {
         return false
     }
 
 }
-chaleng('mari','malrmi')
-console.log(chaleng('mari','marmmi'))
+chaleng()
+console.log(chaleng())
