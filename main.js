@@ -269,19 +269,62 @@
  //შექმენით ფუნქცია რომელიც 2 prompt-ით შეგეკითხებათ სახელს და პაროლს, თუ სახელი იქნება "admin" და პაროლი "1234", 
  // //დაწეროს ტექსტი Hello Admin, წინააღმდეგ შემთხვევაში Hello guest.
 
-
- function greetAdmin(num, string ){
-    let adminName=prompt (` რა გქვია?`)
-    let password = prompt(`დაწერე პაროლი`)
+// let adminName=prompt (` რა გქვია?`)
+//   let password = prompt(`დაწერე პაროლი`)
+//   function greetAdmin(num, string ){
+     
     
-    if( adminName == 'Admin' && password==1234){
-        return 'Hello Admin'
+//      if( adminName == 'Admin' && password==1234){
+//          return 'Hello Admin'
+//      }
+//      else{
+//          return 'Hello guest'
+//      }
+
+//   }
+
+//   greetAdmin( 1234,'Admin')
+//   console.log (greetAdmin( 1234,'Admin'))
+
+
+// davaleba 16
+// ექმენით ფუნქცია რომელიც 2 prompt-ით მიიღებს საათს მაგ: 10:00 და მეორე PM ან AM , ამის
+// მიხედვით გადაიყვანოს 22:00-ად ან უბრალოდ დატოვებს 10:00-ად(დამოკიდებული იქნება PM-ზე და AM-ზე
+
+
+function times (){
+    let time =Number(prompt(`დაწერე მიმდინარე საათი`))
+let timeAmPm =prompt(`დაწერე PM ან AM`)
+    if(timeAmPm == 'PM'){
+
+        return time = time+ 12
+        console.log(time)
     }
-    else{
-        return 'Hello guest'
+else {
+    return time
+    console.log(time)
+}
+
+}
+
+times(10)
+
+
+
+davaleba 17
+ფუნქცია რომელსაც გადავცემთ ორ სიტყვას და უნდა შეადაროს ასოების რაოდენობა.
+თუ დაემთხვევა პირველი სიტყვის ასოები მეორეს დააბრუნოს true თუ არა false .
+
+function chaleng(string1, string2){
+    con
+    
+    if (string1.langth === string2.langth){
+        return tr
+    }
+    else {
+        return false
     }
 
- }
-
- greetAdmin( 1234,'Admin')
- console.log (greetAdmin( 1234,'Admin'))
+}
+chaleng('mari','malrmi')
+console.log(chaleng('mari','marmmi'))
