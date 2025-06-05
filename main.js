@@ -337,10 +337,33 @@
 // დაწერე პროგრამა, რომელიც მასივში არსებულ ყველა string-ს გამოიტანს კონსოლში.
 // თუ სტრინგი იქნება ჩაწერილი HeLLo-ს სახით, ჯერ ჩაწეროს პატარა ასოებით და შემდეგ გამოიტანოს. // hello
 
-let subject= ['MATH' ,'FISIX', 'GEOGRAFI', 'BIOLOGY']
-for (let i=0; i<subject.length; i++){
+// let subject= ['MATH' ,'FISIX', 'GEOGRAFI', 'BIOLOGY']
+// for (let i=0; i<subject.length; i++){
    
-   console.log(subject[i].toLowerCase())
+//    console.log(subject[i].toLowerCase())
 
-}
+// }
     
+
+//davaleba 19
+
+// დაწერე ფუნქცია, რომელიც მიიღებს რიცხვს და დააბრუნებს მისი ყველა გამყოფის მასივს.
+// მაგალითად :
+// console.log(getDivisors(12)); // 12-ის გადაცემის შემდეგ მივიღოთ ასეთი შედეგი [1, 2, 3, 4, 6, 12]
+
+// მინიშნება:ერთი რიცხვის მეორეზე გაყოფისას თუ ნაშთი უდრის 0-ს მაშინ ეს მისი გამყოფია.
+
+// დაგჭირდებათ for loop-ი და if ოპერატორი.
+// ასევე მეთოდი რომელიც ელემენტებს array-ში ამატებს.
+
+function getDivisors(number){
+
+let x =[]
+for(i=0; i<=number; i++)
+    if( number % i === 0){
+        x.push(i)
+    }
+    return x
+}
+
+console.log(getDivisors(12))
