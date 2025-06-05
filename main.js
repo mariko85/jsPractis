@@ -315,20 +315,32 @@
 //ფუნქცია რომელსაც გადავცემთ ორ სიტყვას და უნდა შეადაროს ასოების რაოდენობა.
 //თუ დაემთხვევა პირველი სიტყვის ასოები მეორეს დააბრუნოს true თუ არა false .
 
-let string1 = prompt(`ჩაწერე პირველი სიტყვა `)
- let string2 = prompt(`ჩაწერე მეორე სიტყვა `)
-function chaleng(){
+// let string1 = prompt(`ჩაწერე პირველი სიტყვა `)
+//  let string2 = prompt(`ჩაწერე მეორე სიტყვა `)
+// function chaleng(){
  
-    let array1 = string1.split('')
-    let array2 =string2.split('')
+//     let array1 = string1.split('')
+//     let array2 =string2.split('')
     
-if (array1[0]=== array2[0]){
-        return true
-        }
-    else {
-        return false
-    }
+// if (array1[0]=== array2[0]){
+//         return true
+//         }
+//     else {
+//         return false
+//     }
+
+// }
+// chaleng()
+// console.log(chaleng())
+
+//davaleba 18
+// დაწერე პროგრამა, რომელიც მასივში არსებულ ყველა string-ს გამოიტანს კონსოლში.
+// თუ სტრინგი იქნება ჩაწერილი HeLLo-ს სახით, ჯერ ჩაწეროს პატარა ასოებით და შემდეგ გამოიტანოს. // hello
+
+let subject= ['MATH' ,'FISIX', 'GEOGRAFI', 'BIOLOGY']
+for (let i=0; i<subject.length; i++){
+   
+   console.log(subject[i].toLowerCase())
 
 }
-chaleng()
-console.log(chaleng())
+    
