@@ -357,13 +357,15 @@
 // ასევე მეთოდი რომელიც ელემენტებს array-ში ამატებს.
 
 function getDivisors(number){
-
-let x =[]
-for(i=0; i<=number; i++)
-    if( number % i === 0){
-        x.push(i)
+    let array =[]
+    for( let i=0; i <=number; i++){
+        if(number% i === 0){
+            array.push(i)
+        }
     }
-    return x
+    return array
 }
 
-console.log(getDivisors(12))
+
+
+console.log(getDivisors(5))
