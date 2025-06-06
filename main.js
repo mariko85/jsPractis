@@ -337,13 +337,20 @@
 // დაწერე პროგრამა, რომელიც მასივში არსებულ ყველა string-ს გამოიტანს კონსოლში.
 // თუ სტრინგი იქნება ჩაწერილი HeLLo-ს სახით, ჯერ ჩაწეროს პატარა ასოებით და შემდეგ გამოიტანოს. // hello
 
-// let subject= ['MATH' ,'FISIX', 'GEOGRAFI', 'BIOLOGY']
+let subject= ['MATH' ,'FISIX', 'GEOGRAFI', 'BIOLOGY']
 // for (let i=0; i<subject.length; i++){
    
 //    console.log(subject[i].toLowerCase())
 
 // }
-    
+
+//an
+// for (let i=0; i<subject.length; i++){
+   
+//    let m=subject[i][0].toUpperCase()+subject[i].slice(1,subject[i].length).toLowerCase()
+//   console.log(m) 
+// }
+ 
 
 //davaleba 19
 
@@ -356,16 +363,35 @@
 // დაგჭირდებათ for loop-ი და if ოპერატორი.
 // ასევე მეთოდი რომელიც ელემენტებს array-ში ამატებს.
 
-function getDivisors(number){
-    let array =[]
-    for( let i=0; i <=number; i++){
-        if(number% i === 0){
-            array.push(i)
-        }
-    }
-    return array
+// function getDivisors(number){
+//     let array =[]
+//     for( let i=0; i <=number; i++){
+//         if(number% i === 0){
+//             array.push(i)
+//         }
+//     }
+//     return array
+// }
+
+
+
+// console.log(getDivisors(5))
+
+
+//დავალება20
+
+//შექმენი ობიექტი, რომელიც შეიცავს რამდენიმე წიგნის მონაცემებს (title, author, year)
+//  და ფუნქცია, რომელიც დააბრუნებს წიგნის სათაურს.
+
+let books = {
+    title:'ჩემი თავგადასავალი',
+    author: "ი. ჭავჭავაძე",
+    year: 2005,
+      
 }
 
+function getBook(){
+    return books.title
+}
 
-
-console.log(getDivisors(5))
+console.log(getBook())
