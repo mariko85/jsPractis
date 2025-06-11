@@ -381,29 +381,48 @@ let subject= ['MATH' ,'FISIX', 'GEOGRAFI', 'BIOLOGY']
 //დავალება20
 
 //შექმენი ობიექტი, რომელიც შეიცავს რამდენიმე წიგნის მონაცემებს (title, author, year)
-//  და ფუნქცია, რომელიც დააბრუნებს წიგნის სათაურს.
+// //  და ფუნქცია, რომელიც დააბრუნებს წიგნის სათაურს.
 
-let books = {
-    title:'ჩემი თავგადასავალი',
-    author: "ი. ჭავჭავაძე",
-    year: 2005,
+// let books = {
+//     title:'ჩემი თავგადასავალი',
+//     author: "ი. ჭავჭავაძე",
+//     year: 2005,
       
-}
+// }
 
-function getBook(){
-    return books.title
-}
+// function getBook(){
+//     return books.title
+// }
 
-console.log(getBook())
+// console.log(getBook())
 
 
 
 // //დავალება  21
 // აღწერა: შექმენი ღილაკი და p ელემენტი. როდესაც ღილაკს დააჭერ, p-ში ტექსტი უნდა შეიცვალოს
 
-let text= document.getElementById("textArea")
-let button =document.getElementById("changeTextB")
+// let text= document.getElementById("textArea")
+// let button =document.getElementById("changeTextB")
 
-button.addEventListener('click', function(){
-    text.textContent="დავალება 21"
-})
+// button.addEventListener('click', function(){
+//     text.textContent="დავალება 21"
+// })
+
+
+// davaleba 22
+//აღწერა: შექმენი input ველი და ღილაკი. როდესაც ღილაკს დააჭერ, გვერდზე გამოჩნდეს ის ტექსტი, რაც მომხმარებელმა input-ში ჩაწერა.
+
+let input =document.getElementById("inputtext")
+let button =document.getElementById("changebutton")
+let text= document.getElementById('text')
+
+input.addEventListener("keydown",function(event){
+        let x=event.key
+        console.log(x)
+  button.addEventListener('click',function(){
+        text.textContent = x
+    })
+    })
+    
+   
+
