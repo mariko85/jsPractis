@@ -395,3 +395,15 @@ function getBook(){
 }
 
 console.log(getBook())
+
+
+
+// //დავალება  21
+// აღწერა: შექმენი ღილაკი და p ელემენტი. როდესაც ღილაკს დააჭერ, p-ში ტექსტი უნდა შეიცვალოს
+
+let text= document.getElementById("textArea")
+let button =document.getElementById("changeTextB")
+
+button.addEventListener('click', function(){
+    text.textContent="დავალება 21"
+})
