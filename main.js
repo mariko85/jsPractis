@@ -412,17 +412,48 @@ let subject= ['MATH' ,'FISIX', 'GEOGRAFI', 'BIOLOGY']
 // davaleba 22
 //აღწერა: შექმენი input ველი და ღილაკი. როდესაც ღილაკს დააჭერ, გვერდზე გამოჩნდეს ის ტექსტი, რაც მომხმარებელმა input-ში ჩაწერა.
 
-let input =document.getElementById("inputtext")
-let button =document.getElementById("changebutton")
-let text= document.getElementById('text')
+// let input =document.getElementById("inputtext")
+// let button =document.getElementById("changebutton")
+// let text= document.getElementById('text')
 
-input.addEventListener("keydown",function(event){
-        let x=event.key
-        console.log(x)
-  button.addEventListener('click',function(){
-        text.textContent = x
-    })
-    })
+// input.addEventListener("keydown",function(event){
+//         let x=event.key
+//         console.log(x)
+//   button.addEventListener('click',function(){
+//         text.textContent = x
+//     })
+//     })
     
-   
 
+
+
+
+    // ვორქშოფის დავალება
+
+
+    const setupEl = document.getElementById('setup');
+    const punchlineEl = document.getElementById('punchline');
+    
+
+    function loadJoke() {
+      fetch('https://official-joke-api.appspot.com/random_joke')
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(data) {
+          
+          console.log(data);
+
+          
+          setupEl.textContent = data.setup;
+          punchlineEl.textContent = data.punchline;
+        })
+        .catch(function(error) {
+          console.error('შეცდომა:', error);
+          setupEl.textContent = 'შეცდომა მოხდა :(';
+          punchlineEl.textContent = '';
+        });
+    }
+
+  
+    loadJoke();
